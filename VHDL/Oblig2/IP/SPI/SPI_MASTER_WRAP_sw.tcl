@@ -1,0 +1,9 @@
+create_driver SPI_driver
+set_sw_property hw_class_name SPI_MASTER_WRAP
+set_sw_property version 1
+set_sw_property min_compatible_hw_version 1.0
+add_sw_property bsp_subdirectory drivers
+add_sw_property include_source HAL/inc/spi_master_regs.h
+add_sw_property include_source HAL/inc/spi_master_func.h
+add_sw_property include_source HAL/src/spi_master_func.c
+add_sw_property supported_bsp_type HAL
